@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Layout using Bootstrap</title>
+
+    <!-- Include the bootstrap library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: #323232;
+        }
+
+        .container-fluid {
+            height: 100vh;
+        }
+        
+        nav, section, main, footer {
+            padding: 15px;
+            margin: 7px;
+            box-shadow: 0px 0px 5px 2px rgb(226, 217, 238);
+            border-radius: 15px;
+        }
+
+        nav {
+            background-color: rgb(197, 173, 228);
+        }
+
+        main {
+            background-color: rgb(173, 211, 228);
+        }
+
+        #sidebar {
+            background-color: rgb(200, 228, 173);
+        }
+
+        #content1 {
+            background-color: rgb(228, 173, 173);
+        }
+
+        #content2 {
+            background-color: rgb(228, 173, 173);
+        }
+
+        #content3 {
+            background-color: rgb(228, 173, 173);
+        }
+
+        footer {
+            background-color: rgb(228, 173, 219);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav>Navbar</nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <section id="sidebar">Sidebar</section>
+            </div>
+            
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <main>Hero Section</main>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <section id="content1">Feature Area 1</section>
+                    </div>
+
+                    <div class="col">
+                        <section id="content2">Feature Area 2</section>
+                    </div>
+
+                    <div class="col">
+                        <section id="content3">Feature Area 3</section>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <footer>Footer Area</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
